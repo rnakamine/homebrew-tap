@@ -5,20 +5,20 @@
 class IstioAxslog < Formula
   desc "istio-axslog is parsed istio-proxy(envoy) access log and output in any format."
   homepage "https://github.com/rnakamine/istio-axslog"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rnakamine/istio-axslog/releases/download/v0.0.4/istio-axslog_0.0.4_darwin_amd64.tar.gz"
-      sha256 "e4a819c32567feb09b165f34c12c75b749170e98e111e79960dde698587e7596"
+      url "https://github.com/rnakamine/istio-axslog/releases/download/v0.0.5/istio-axslog_0.0.5_darwin_amd64.tar.gz"
+      sha256 "7ef6c35cbf9050d96e72c99da2557ec3534f28f807ecc4989d791091899894f5"
 
       def install
         bin.install "istio-axslog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rnakamine/istio-axslog/releases/download/v0.0.4/istio-axslog_0.0.4_darwin_arm64.tar.gz"
-      sha256 "16b24b4a127e9851776792be291684ce451d938f133325359605f4987d6529e4"
+      url "https://github.com/rnakamine/istio-axslog/releases/download/v0.0.5/istio-axslog_0.0.5_darwin_arm64.tar.gz"
+      sha256 "dd3eaef6fb38bf05fc6dfafff60c72035d6f25a377dba59df5f9614e520090a7"
 
       def install
         bin.install "istio-axslog"
@@ -28,16 +28,16 @@ class IstioAxslog < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rnakamine/istio-axslog/releases/download/v0.0.4/istio-axslog_0.0.4_linux_arm64.tar.gz"
-      sha256 "a332637aa21fbfc8cf21b2169c0076b96b67e5610b11e14f8132d7e58b6c7788"
+      url "https://github.com/rnakamine/istio-axslog/releases/download/v0.0.5/istio-axslog_0.0.5_linux_arm64.tar.gz"
+      sha256 "341cc38188143940b732b0eb3354537ac265e24be6cb3cf5d7bf42cc4eddb123"
 
       def install
         bin.install "istio-axslog"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rnakamine/istio-axslog/releases/download/v0.0.4/istio-axslog_0.0.4_linux_amd64.tar.gz"
-      sha256 "3162ecd329ca623292cb5bd0b239f0c29e6baf0c75e6c35eec22d80b4e3839ce"
+      url "https://github.com/rnakamine/istio-axslog/releases/download/v0.0.5/istio-axslog_0.0.5_linux_amd64.tar.gz"
+      sha256 "9b764e5221af2457de71a2f8fca8ea8bbd13be9d015b59054768dd0e5e230308"
 
       def install
         bin.install "istio-axslog"
